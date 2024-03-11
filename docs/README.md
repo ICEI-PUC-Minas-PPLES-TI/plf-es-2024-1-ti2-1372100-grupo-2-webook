@@ -57,7 +57,7 @@ _No caso específico desse projeto, o objetivo deste trabalho  é desenvolver um
 _Objetivos específicos:
   Empréstimo;_
   
-_  Devolução;_
+  _Devolução;_
   
   _Gerenciamento de usuário;_
   
@@ -73,6 +73,7 @@ O processo se justifica pois muitas bibliotecas físicas sofrem com o controle e
 ## 2. Participantes do processo
 
 _Apenas dois participantes no processo, seriam eles:
+
   Usuario;_
    
    _Bibliotecario;_
