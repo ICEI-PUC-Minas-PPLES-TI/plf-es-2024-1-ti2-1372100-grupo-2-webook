@@ -1,23 +1,25 @@
-# TITULO DO PROJETO
+# WeBook
 
 
-**Nome completo do Aluno 1, email do aluno 1**
+**Arthur Curi Kramberger, ackramberger@sga.pucminas.br**
 
-**Nome completo do Aluno 2, email do aluno 2**
+**Eduardo Palhares Reale Pereira, eduardo.palhares@sga.pucminas.br**
 
-**Nome completo do Aluno 3, email do aluno 3**
+**Hugo Macedo de Carvalho, hmcarvalho@sga.pucminas.br**
 
-**Nome completo do Aluno 4, email do aluno 4**
+**João Pedro Guimarães Ribeiro, joao.ribeiro.1485762@sga.pucminas.br**
 
-**Nome completo do Aluno 5, email do aluno 5**
+**Pedro Henrique de Almeida Araujo, pedroaraujo2906@hotmail.com**
+
+**Pedro Henrique Pimenta Vaz, pedro.vaz@sga.pucminas.br**
 
 ---
 
 Professores:
 
-** Prof. Nome do Prof 1 **
+**Eveline Alonso Veloso**
 
-** Prof. Nome do Prof 2 **
+**Juliana Amaral Baroni de Carvalho**
 
 ---
 
@@ -35,35 +37,34 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 ## 1. Introdução
 
-_Apresente uma frase introdutória definindo o que será apresentado._
+_Explore um mundo de conhecimento e entretenimento sem sair do conforto da sua casa. Bem-vindo ao nosso site de aluguel de livros, sua biblioteca online pessoal, onde a leitura se torna uma experiência de fácil acesso, mais barata e simples._
 
 ### 1.1 Contextualização
 
-_Na **contextualização**, o aluno deve dizer do que se trata o trabalho, em que área ou contexto se insere.
-A **contextualização** deve ser desenvolvida de algo mais genérico para algo mais específico. 
-A citação de pesquisas quantitativas é bem aceita aqui (corretamente referenciadas)._
+_As bibliotecas assumem um papel fundamental na sociedade moderna, servindo como centros de informação, conhecimento e cultura. Elas transcendem a mera função de armazenamento de livros, atuando como espaços de pesquisa, aprendizado e desenvolvimento social. No contexto da era digital, as bibliotecas se reinventam, incorporando novas tecnologias e ampliando seus serviços para atender às demandas de uma sociedade cada vez mais conectada. De acordo com essa pesquisa realizada pela Associação Paulista de Bibliotecas e Leitura, cerca de 34 milhões de pessoas frequentam bibliotecas no País, sendo a maioria pertencente à classe C (49%), seguida da B, com 26% e D/E, com 21%. Os estudantes são 60% dos frequentadores. A principal motivação para ir à biblioteca é ler livros para pesquisar ou estudar (51%) e, em seguida, ler por prazer (33%).
+Fonte: https://www.spleituras.org.br/noticia/cerca-de-34-milhes-de-pessoas-frequentam-bibliotecas-no-brasil-diz-pesquisa_
 
 ### 1.2 Problema
 
-_Em seguida o aluno deve caminhar a contextualização para descrever o **problema** que o trabalho trata. 
-O **problema** pode ser algo vivido em uma empresa específica. Neste caso, o aluno deve rapidamente apresentar 
-o cenário de problema da empresa. A empresa só deve ser citada explicitamente se o aluno tiver autorização 
-para tal._
+_Problemas de bibliotecas sem sistemas de automação começam com a locação de seus livros, que, quando são alugados, podem ser roubados, ou não foram devolvidos ainda. Além de auxiliar e avisar o bibliotecário quando o livro será devolvido caso ele esteja alugado, ele ainda calcula o valor do aluguel para o cliente independente de quanto tempo o cliente quer alugar o livro._
 
 ### 1.3 Objetivo geral
 
-_O aluno deve escrever um pequeno parágrafo ou frase com o **objetivo geral** do trabalho. 
-O objetivo deve ser bem direto, específico e definido com verbos de ação (elaborar, propor, avaliar, comparar, desenvolver, etc.). No caso específico deste projeto, o objetivo deste trabalho é desenvolver um sistema para automação de processos para um problema específico._
+_No caso específico desse projeto, o objetivo deste trabalho  é desenvolver um sistema para automação de processos para bibliotecas no geral. Automatizando serviços como fazer o inventário dos livros para controle geral, fazer a conta do preço do aluguel dos livros e facilitar a administração de livros novos._
 
 #### 1.3.1 Objetivos específicos
 
-_Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde você vai querer 
-concentrar sua prática investigativa, ou como você irá aprofundar seu trabalho._
+_1 Objetivos específicos:
+  Empréstimo;
+  Devolução;
+  Gerenciamento de usuário;
+  Gerenciamento de livro;_
 
 ### 1.4 Justificativas
 
-_Mostre também as **justificativas** para o 
-desenvolvimento do seu trabalho e, caso deseje, destaque alguma contribuição do trabalho._
+_Auxiliar bibliotecas físicas com o gerenciamento e organização dos livros.
+Auxiliar bibliotecas físicas e onlines (como o kindle) por exemplo com métodos de pagamento e cálculo de preços.
+O processo se justifica pois muitas bibliotecas físicas sofrem com o controle e administração de empréstimo e devolução de livros._
 
 ## 2. Participantes do processo
 
