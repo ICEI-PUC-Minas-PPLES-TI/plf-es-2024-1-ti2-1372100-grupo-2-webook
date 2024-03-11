@@ -54,7 +54,7 @@ _No caso específico desse projeto, o objetivo deste trabalho  é desenvolver um
 
 #### 1.3.1 Objetivos específicos
 
-_1 Objetivos específicos:
+_Objetivos específicos:
   Empréstimo;
   Devolução;
   Gerenciamento de usuário;
@@ -76,7 +76,7 @@ _Apenas dois participantes no processo, seriam eles:
 
 ### 3.1. Análise da situação atual
 
-_Atualmente, normalmente os procedimentos manuais e/ou sistemas tradicionais de gestão de bibliotecas são usados para lidar com o problema das filas e dos atrasos na devolução de livros em bibliotecas. Aqui está uma descrição textual de como esses sistemas normalmente funcionam:
+_Normalmente os procedimentos manuais e/ou sistemas tradicionais de gestão de bibliotecas são usados para lidar com o problema das filas e dos atrasos na devolução de livros em bibliotecas. Aqui está uma descrição textual de como esses sistemas normalmente funcionam:
 **Devolução de livros:** Dentro do prazo estabelecido para a devolução, o utilizador volta à biblioteca com o livro em sua posse. Mais uma vez, ele vai até ao balcão de atendimento, onde o funcionário verifica a condição do livro e registra a devolução no sistema. Caso haja atraso na devolução, o funcionário irá calcular a multa conforme as políticas da biblioteca.
 **Gestão de filas:** O tempo de espera nas filas pode mudar conforme a quantidade de usuários na biblioteca, o atendimento eficaz e outros fatores. Durante os horários de pico, a biblioteca pode designar mais funcionários para o balcão ou implementar sistemas de reserva online de livros para reduzir a espera.
 **Cobrança de multas:** Normalmente, as multas por atraso na devolução são cobradas quando o livro é devolvido ou em um momento subsequente quando o usuário retorna à biblioteca. A multa é calculada de acordo com o atraso e as políticas da biblioteca.
