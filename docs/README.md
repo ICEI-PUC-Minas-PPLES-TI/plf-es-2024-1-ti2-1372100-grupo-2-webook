@@ -72,9 +72,9 @@ O processo se justifica pois muitas bibliotecas físicas sofrem com o controle e
 
 ## 2. Participantes do processo
 
-_Apenas dois participantes no processo, seriam eles:
+_Apenas dois participantes no processo, seriam eles:_
 
-  Usuario;_
+  _Usuario;_
    
    _Bibliotecario;_
 
