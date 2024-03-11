@@ -23,7 +23,7 @@ Professores:
 
 ---
 
-_Curso de Engenharia de Software
+_Curso de Engenharia de Software_
 
 _Instituto de Informática e Ciências Exatas – Pontifícia Universidade Católica de Minas Gerais (PUC MINAS), Belo Horizonte – MG – Brasil_
 
@@ -68,17 +68,24 @@ O processo se justifica pois muitas bibliotecas físicas sofrem com o controle e
 
 ## 2. Participantes do processo
 
-_Apresente aqui os perfis dos usuários-chave do sistema. Diversas são as informações que podem ser relevantes para a definição dos perfis dos usuários, tais como idade, gênero, aspectos culturais, nível de educação, entre outros. A pesquisa de mercado pode ser uma ferramenta poderosa para se identificar e caracterizar os perfis de usuários. Apresente claramente o papel a ser desempenhado por cada usuário._
+_Apenas dois participantes no processo, seriam eles:
+   Usuario
+   Bibliotecario_
 
 ## 3. Modelagem do processo de negócio
 
 ### 3.1. Análise da situação atual
 
-_Apresente uma descrição textual de como os sistemas atuais resolvem o problema que se propõe a resolver.  Caso sua proposta seja inovadora e não existam processos claramente definidos, **apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente**, mesmo que não se utilize tecnologia computacional._
+_Atualmente, normalmente os procedimentos manuais e/ou sistemas tradicionais de gestão de bibliotecas são usados para lidar com o problema das filas e dos atrasos na devolução de livros em bibliotecas. Aqui está uma descrição textual de como esses sistemas normalmente funcionam:
+**Devolução de livros:** Dentro do prazo estabelecido para a devolução, o utilizador volta à biblioteca com o livro em sua posse. Mais uma vez, ele vai até ao balcão de atendimento, onde o funcionário verifica a condição do livro e registra a devolução no sistema. Caso haja atraso na devolução, o funcionário irá calcular a multa conforme as políticas da biblioteca.
+**Gestão de filas:** O tempo de espera nas filas pode mudar conforme a quantidade de usuários na biblioteca, o atendimento eficaz e outros fatores. Durante os horários de pico, a biblioteca pode designar mais funcionários para o balcão ou implementar sistemas de reserva online de livros para reduzir a espera.
+**Cobrança de multas:** Normalmente, as multas por atraso na devolução são cobradas quando o livro é devolvido ou em um momento subsequente quando o usuário retorna à biblioteca. A multa é calculada de acordo com o atraso e as políticas da biblioteca.
+Nas bibliotecas atuais, o controle manual de empréstimos consome considerável tempo dos bibliotecários, tanto durante o processo de empréstimo realizado pelos estudantes quanto na gestão da disponibilidade dos livros para os leitores em datas específicas. Tradicionalmente, no procedimento geral de empréstimo, o cliente, após apresentar sua documentação, escolhe o livro desejado e assina um termo, registrando o momento da retirada e o responsável. Após essa etapa, o cliente recebe um comprovante contendo informações essenciais para a devolução na data estipulada, incluindo possíveis multas por atraso. Infelizmente, muitas bibliotecas enfrentam desafios decorrentes do elevado volume de clientes, resultando em dificuldades e atrasos nesse processo que poderia ser agilizado e gerenciado de maneira mais eficiente.
+Diante dessas dificuldades, as bibliotecas em todo o Brasil confrontam desafios significativos relacionados a roubos e danos aos livros emprestados aos leitores. Em resposta a esse cenário, nosso projeto propõe a minimização desses problemas por meio de um sistema de gerenciamento de multas. O objetivo central é calcular com precisão as multas dos clientes, visando evitar prejuízos financeiros para as bibliotecas. Nossa plataforma será utilizada para calcular o valor correspondente a livros perdidos e efetuar o pagamento correspondente. Em casos de danos, faremos uma avaliação da gravidade do estrago, incorporando o custo do reparo ao valor do aluguel do livro. Com essa abordagem integrada, almejamos não apenas otimizar a eficiência do processo de empréstimo, mas também proporcionar uma gestão mais ágil e eficaz dos recursos bibliotecários em todo o país._
 
 ### 3.2. Descrição geral da proposta
 
-_Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias._
+_A proposta do nosso projeto consiste em auxiliar bibliotecas físicas e presenciais com os metodos de pagamento da locação de livros, datas de devolução, calculo de multas em caso de atraso do prazo de devolução e localização de um livro especifico em determinado setor da biblioteca, facilitando o trabalho do bibliotecario e melhorando o atendimento ao cliente, alem de facilitar calcular o valor de multas através do cadastro do cliente e dos livros no nosso software._
 
 ### 3.3. Modelagem dos processos
 
