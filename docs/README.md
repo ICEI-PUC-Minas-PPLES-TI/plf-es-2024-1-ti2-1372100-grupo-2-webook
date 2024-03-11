@@ -55,10 +55,14 @@ _No caso específico desse projeto, o objetivo deste trabalho  é desenvolver um
 #### 1.3.1 Objetivos específicos
 
 _Objetivos específicos:
-  Empréstimo;
-  Devolução;
-  Gerenciamento de usuário;
-  Gerenciamento de livro;_
+  Empréstimo;_
+  
+_  Devolução;_
+  
+  _Gerenciamento de usuário;_
+  
+  _Gerenciamento de livro;_
+  
 
 ### 1.4 Justificativas
 
@@ -69,8 +73,9 @@ O processo se justifica pois muitas bibliotecas físicas sofrem com o controle e
 ## 2. Participantes do processo
 
 _Apenas dois participantes no processo, seriam eles:
-   Usuario
-   Bibliotecario_
+  Usuario;_
+   
+   _Bibliotecario;_
 
 ## 3. Modelagem do processo de negócio
 
