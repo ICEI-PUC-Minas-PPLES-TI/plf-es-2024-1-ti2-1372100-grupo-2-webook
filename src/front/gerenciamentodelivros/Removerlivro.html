@@ -4,36 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escolher Livro</title>
-    <link href=" /src/front/gerenciamentodelivros/Removerlivro.css" rel="stylesheet" />
+    <title>Remover Livro</title>
+    <link href="/webook/src/front/gerenciamentodelivros/Removerlivro.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <style>
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #ccc;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <a href=" /src/front/gerenciamentodelivros/Iniciargerenciamento.html">
-                <img src=" /docs/images/Logopng.png" alt="Logo" class="logo">
+            <a href="/webook/src/front/gerenciamentodelivros/Iniciargerenciamento.html">
+                <img src="/webook/docs/images/Logopng.png" alt="Logo" class="logo">
             </a>
             <div class="search-container">
                 <input type="search" placeholder="Buscar Livro..." class="search-bar">
@@ -41,19 +24,32 @@
             </div>
         </div>
     </header>
-    
+
     <table id="livros-table">
         <thead>
             <tr>
-                <th>Título</th>
-                <th>Autor</th>
-                <th>Ano de Publicação</th>
+                <th>ID</th>
                 <th>ISBN</th>
+                <th>Autor</th>
+                <th>Editora</th>
+                <th>Preço</th>
+                <th>Seção</th>
+                <th>Título</th>
+                <th>Ação</th>
             </tr>
         </thead>
         <tbody>
         </tbody>
     </table>
+
+    <div class="remover-livro">
+        <h2>Remover Livro</h2>
+        <div>
+            <label for="livro-id">ID do Livro:</label>
+            <input type="text" id="livro-id" name="livro-id">
+            <button onclick="removerLivro()">Remover</button>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -67,7 +63,7 @@
     </footer>
 
     <script>
-        const apiUrl = 'localhost:8080/livros';
+        const apiUrl = 'http://localhost:8080/livro';
 
         async function fetchLivros() {
             try {
@@ -76,17 +72,19 @@
 
                 const livrosTable = document.getElementById('livros-table');
 
-
                 livrosTable.getElementsByTagName('tbody')[0].innerHTML = '';
-
 
                 data.forEach(livro => {
                     const newRow = document.createElement('tr');
                     newRow.innerHTML = `
-                        <td>${livro.titulo}</td>
-                        <td>${livro.autor}</td>
-                        <td>${livro.ano_publicacao}</td>
+                        <td>${livro.id}</td>
                         <td>${livro.isbn}</td>
+                        <td>${livro.autor}</td>
+                        <td>${livro.editora}</td>
+                        <td>${livro.preco}</td>
+                        <td>${livro.secao}</td>
+                        <td>${livro.titulo}</td>
+                        <td><button onclick="removerLivro(${livro.id})">Remover</button></td>
                     `;
                     livrosTable.getElementsByTagName('tbody')[0].appendChild(newRow);
                 });
@@ -94,8 +92,28 @@
                 console.error('Erro ao buscar livros:', error);
             }
         }
+
+        async function removerLivro() {
+            const livroId = document.getElementById('livro-id').value;
+            try {
+                const requestOptions = {
+                    method: 'DELETE'
+                };
+                const response = await fetch(`${apiUrl}/${livroId}`, requestOptions);
+                if (!response.ok) {
+                    throw new Error('Erro ao remover livro');
+                }
+                console.log('Livro removido com sucesso');
+
+                fetchLivros();
+            } catch (error) {
+                console.error('Erro ao remover livro:', error);
+            }
+        }
+
         window.onload = fetchLivros;
     </script>
+
 </body>
 
 </html>

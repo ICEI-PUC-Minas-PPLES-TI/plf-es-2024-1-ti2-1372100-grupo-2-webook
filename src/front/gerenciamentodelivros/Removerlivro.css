@@ -24,7 +24,6 @@
     transform: translateY(-50%);
 }
 
-
 .search-container {
     display: flex;
     width: 80%;
@@ -113,4 +112,20 @@ footer {
 
 .social-links li a:hover {
     color: rgb(64, 95, 121);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }

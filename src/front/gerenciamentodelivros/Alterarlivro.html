@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Livro</title>
-    <link href=" /src/front/gerenciamentodelivros/Adicionarlivro.css" rel="stylesheet" />
+    <link href="/webook/src/front/gerenciamentodelivros/Alterarlivro.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -14,23 +14,19 @@
 <body>
     <header>
         <div class="header-container">
-            <a href=" /src/front/gerenciamentodelivros/Iniciargerenciamento.html">
-                <img src=" /docs/images/Logopng.png" alt="Logo" class="logo">
+            <a href="/webook/src/front/gerenciamentodelivros/Iniciargerenciamento.html">
+                <img src="/webook/docs/images/Logopng.png" alt="Logo" class="logo">
             </a>
-            </div>
+        </div>
     </header>
-    
+
     <main>
-        <div class="adicionar-livro-form">
+        <div class="editar-livro-form">
             <h2>Editar Livro</h2>
-            <form action=" /src/front/gerenciamentodelivros/Adicionarlivro.html" method="POST">
+            <form>
                 <div class="form-group">
-                    <label for="titulo">Id livro:</label>
-                    <input type="text" id="titulo" name="titulo" required>
-                </div>
-                <div class="form-group">
-                    <label for="titulo">Editora:</label>
-                    <input type="text" id="titulo" name="titulo" required>
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id" required>
                 </div>
                 <div class="form-group">
                     <label for="titulo">Título:</label>
@@ -41,14 +37,22 @@
                     <input type="text" id="autor" name="autor" required>
                 </div>
                 <div class="form-group">
-                    <label for="ano">Preço:</label>
-                    <input type="number" id="ano" name="ano" required>
-                </div>
-                <div class="form-group">
-                    <label for="isbn">Seção:</label>
+                    <label for="isbn">ISBN:</label>
                     <input type="text" id="isbn" name="isbn" required>
                 </div>
-                <button type="submit">Adicionar Livro</button>
+                <div class="form-group">
+                    <label for="editora">Editora:</label>
+                    <input type="text" id="editora" name="editora" required>
+                </div>
+                <div class="form-group">
+                    <label for="secao">Seção:</label>
+                    <input type="text" id="secao" name="secao" required>
+                </div>
+                <div class="form-group">
+                    <label for="preco">Preço:</label>
+                    <input type="number" id="preco" name="preco" required>
+                </div>
+                <button type="button" onclick="editarLivro()">Salvar Alterações</button>
             </form>
         </div>
     </main>
@@ -63,5 +67,73 @@
         </div>
     </footer>
 </body>
+<script>
+    async function editarLivro() {
+        const id = document.getElementById('id').value;
+        const titulo = document.getElementById('titulo').value;
+        const autor = document.getElementById('autor').value;
+        const isbn = document.getElementById('isbn').value;
+        const editora = document.getElementById('editora').value;
+        const secao = document.getElementById('secao').value;
+        const preco = document.getElementById('preco').value;
+
+        const livroEditado = {
+            id: id,
+            tituloLivro: titulo,
+            autor: autor,
+            isbn: isbn,
+            editora: editora,
+            secao: secao,
+            preco: preco
+        };
+
+        const requestOptions = {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(livroEditado)
+        };
+
+        fetch(`http://localhost:8080/livro/${id}`, requestOptions)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro ao editar livro');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Livro editado com sucesso:', data);
+            })
+            .catch(error => {
+                console.error('Erro ao editar livro:', error);
+            });
+    }
+
+    async function preencherCampos(id) {
+        try {
+            const response = await fetch(`http://localhost:8080/livro/${id}`);
+            const livro = await response.json();
+
+            document.getElementById('id').value = livro.id;
+            document.getElementById('titulo').value = livro.tituloLivro;
+            document.getElementById('autor').value = livro.autor;
+            document.getElementById('isbn').value = livro.isbn;
+            document.getElementById('editora').value = livro.editora;
+            document.getElementById('secao').value = livro.secao;
+            document.getElementById('preco').value = livro.preco;
+        } catch (error) {
+            console.error('Erro ao buscar livro:',   error);
+        }
+    }
+
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        if (id) {
+            preencherCampos(id);
+        }
+    };
+</script>
 
 </html>
