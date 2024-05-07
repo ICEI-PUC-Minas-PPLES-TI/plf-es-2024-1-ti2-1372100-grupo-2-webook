@@ -78,9 +78,14 @@
                alert('ISBN deve conter apenas numeros');
               return;
             }
-            if(autor<'65'|| autor>'122' && autor<'48' || autor>'57'){
-                alert('Autor deve conter apenas letras');
-                return;
+            for(var i = 0 ; i<autor.lenght ; i++){
+                var j;
+                j = autor.charAt(i);
+                if(j<='64' || j>='123' || j !='32' ){
+                    alert('Autor deve conter apenas letras')
+                    return;
+                }
+
             }
 
             const novoLivro = {
