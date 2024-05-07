@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Livro</title>
+    <link href="/webook/src/front/gerenciamentodelivros/Adicionarlivro.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/webook/src/front/gerenciamentodelivros/Iniciargerenciamento.html">
+                <img src="/webook/docs/images/Logopng.png" alt="Logo" class="logo">
+            </a>
+            </div>
+    </header>
+    
+    <main>
+        <div class="adicionar-livro-form">
+            <h2>Adicionar Livro</h2>
+            <form action="/webook/src/front/gerenciamentodelivros/Adicionarlivro.html" method="POST">
+                <div class="form-group">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="autor">Nome do Autor:</label>
+                    <input type="text" id="autor" name="autor" required>
+                </div>
+                <div class="form-group">
+                    <label for="ano">Ano de Publicação:</label>
+                    <input type="number" id="ano" name="ano" required>
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" id="isbn" name="isbn" required>
+                </div>
+                <button type="submit">Adicionar Livro</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>© Webook - Gerenciar Livros. Todos os direitos reservados.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

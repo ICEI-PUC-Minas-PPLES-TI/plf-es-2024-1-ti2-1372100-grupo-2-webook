@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1el7ebq" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.20.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.4.0">
+  <bpmn:collaboration id="Collaboration_0kujcn3">
+    <bpmn:participant id="Participant_0lr72os" name="Gerenciamento do livro" processRef="Process_0pdjz2g" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0pdjz2g" isExecutable="true">
+    <bpmn:laneSet id="LaneSet_18nnlyc">
+      <bpmn:lane id="Lane_1xd8ldz" name="Bibliotecario">
+        <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0kk8sqj</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0bp3dvw</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1egwbvq</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1ak3ron</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="Flow_187z1ta" sourceRef="StartEvent_1" targetRef="Activity_0bp3dvw" />
+    <bpmn:sequenceFlow id="Flow_19ultxm" sourceRef="Activity_0bp3dvw" targetRef="Activity_1egwbvq" />
+    <bpmn:sequenceFlow id="Flow_0mlxwfp" sourceRef="Activity_1egwbvq" targetRef="Activity_1ak3ron" />
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_187z1ta</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_0kk8sqj">
+      <bpmn:incoming>Flow_13yeedf</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_13yeedf" sourceRef="Activity_1ak3ron" targetRef="Event_0kk8sqj" />
+    <bpmn:serviceTask id="Activity_0bp3dvw" name="Adicionar novo livro no sistema">
+      <bpmn:incoming>Flow_187z1ta</bpmn:incoming>
+      <bpmn:outgoing>Flow_19ultxm</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:scriptTask id="Activity_1egwbvq" name="Preencher informações do livro (nome, seção, autor)">
+      <bpmn:incoming>Flow_19ultxm</bpmn:incoming>
+      <bpmn:outgoing>Flow_0mlxwfp</bpmn:outgoing>
+    </bpmn:scriptTask>
+    <bpmn:serviceTask id="Activity_1ak3ron" name="Salvar livro com informações no sistema">
+      <bpmn:incoming>Flow_0mlxwfp</bpmn:incoming>
+      <bpmn:outgoing>Flow_13yeedf</bpmn:outgoing>
+    </bpmn:serviceTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0kujcn3">
+      <bpmndi:BPMNShape id="Participant_0lr72os_di" bpmnElement="Participant_0lr72os" isHorizontal="true">
+        <dc:Bounds x="152" y="120" width="725" height="610" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1xd8ldz_di" bpmnElement="Lane_1xd8ldz" isHorizontal="true">
+        <dc:Bounds x="182" y="120" width="695" height="610" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="232" y="402" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0kk8sqj_di" bpmnElement="Event_0kk8sqj">
+        <dc:Bounds x="782" y="392" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1cmdslz_di" bpmnElement="Activity_0bp3dvw">
+        <dc:Bounds x="310" y="370" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_02e0xap_di" bpmnElement="Activity_1egwbvq">
+        <dc:Bounds x="470" y="370" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_165au2f_di" bpmnElement="Activity_1ak3ron">
+        <dc:Bounds x="620" y="370" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_187z1ta_di" bpmnElement="Flow_187z1ta">
+        <di:waypoint x="268" y="420" />
+        <di:waypoint x="310" y="420" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_19ultxm_di" bpmnElement="Flow_19ultxm">
+        <di:waypoint x="410" y="410" />
+        <di:waypoint x="470" y="410" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0mlxwfp_di" bpmnElement="Flow_0mlxwfp">
+        <di:waypoint x="570" y="410" />
+        <di:waypoint x="620" y="410" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_13yeedf_di" bpmnElement="Flow_13yeedf">
+        <di:waypoint x="720" y="410" />
+        <di:waypoint x="782" y="410" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
