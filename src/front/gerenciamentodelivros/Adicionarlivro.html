@@ -61,48 +61,54 @@
             </ul>
         </div>
     </footer>
+    <script>
+        function cadastrar() {
+            const titulo = document.getElementById('titulo').value;
+            const autor = document.getElementById('autor').value;
+            const isbn = document.getElementById('isbn').value;
+            const editora = document.getElementById('editora').value;
+            const secao = document.getElementById('secao').value;
+            const preco = document.getElementById('preco').value;
+
+            // Verifica se algum campo está vazio
+            if (!titulo || !autor || !isbn || !editora || !secao || !preco) {
+                alert("Todos os campos devem ser preenchidos.");
+                return;
+            }
+
+            const novoLivro = {
+                tituloLivro: titulo,
+                autor: autor,
+                isbn: isbn,
+                editora: editora,
+                secao: secao,
+                preco: preco
+            };
+
+            const requestOptions = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(novoLivro)
+            };
+
+            fetch("http://localhost:8080/livro", requestOptions)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erro ao cadastrar livro');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Livro cadastrado com sucesso:', data);
+                })
+                .catch(error => {
+                    console.error('Erro ao cadastrar livro:', error);
+                });
+            window.location.href = "/webook/src/front/gerenciamentodelivros/Iniciargerenciamento.html";
+        }
+    </script>
 </body>
-<script>
-    function cadastrar() {
-        const titulo = document.getElementById('titulo').value;
-        const autor = document.getElementById('autor').value;
-        const isbn = document.getElementById('isbn').value;
-        const editora = document.getElementById('editora').value;
-        const secao = document.getElementById('secao').value;
-        const preco = document.getElementById('preco').value;
-
-        const novoLivro = {
-            tituloLivro: titulo,
-            autor: autor,
-            isbn: isbn,
-            editora: editora,
-            secao: secao,
-            preco: preco
-        };
-
-        const requestOptions = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(novoLivro)
-        };
-
-        fetch("http://localhost:8080/livro", requestOptions)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Erro ao cadastrar livro');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('Livro cadastrado com sucesso:', data);
-            })
-            .catch(error => {
-                console.error('Erro ao cadastrar livro:', error);
-            });
-        window.location.href = "/webook/src/front/gerenciamentodelivros/Iniciargerenciamento.html";
-    }
-</script>
 
 </html>

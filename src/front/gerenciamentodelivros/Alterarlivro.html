@@ -76,6 +76,12 @@
         const secao = document.getElementById('secao').value;
         const preco = document.getElementById('preco').value;
 
+        // Verifica se algum campo está vazio
+        if (!id || !titulo || !autor || !isbn || !editora || !secao || !preco) {
+            alert("Todos os campos devem ser preenchidos.");
+            return;
+        }
+
         const livroEditado = {
             id: id,
             tituloLivro: titulo,

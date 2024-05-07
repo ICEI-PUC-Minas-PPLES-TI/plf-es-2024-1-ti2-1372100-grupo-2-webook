@@ -76,7 +76,7 @@
                         <td>${livro.preco}$</td>
                         <td>
                             <button onclick="editarLivro(${livro.id})">Editar</button>
-                            <button onclick="removerLivro(${livro.id})">Remover</button>
+                            <button onclick="confirmarRemoverLivro(${livro.id})">Remover</button>
                         </td>
                     `;
                     tbody.appendChild(newRow);
@@ -112,7 +112,7 @@
                     <td>${livro.preco}$</td>
                     <td>
                         <button onclick="editarLivro(${livro.id})">Editar</button>
-                        <button onclick="removerLivro(${livro.id})">Remover</button>
+                        <button onclick="confirmarRemoverLivro(${livro.id})">Remover</button>
                     </td>
                 `;
                 tbody.appendChild(newRow);
@@ -136,6 +136,12 @@
                 fetchLivros();
             } catch (error) {
                 console.error(error.message);
+            }
+        }
+
+        function confirmarRemoverLivro(id) {
+            if (confirm("Tem certeza de que deseja remover este livro?")) {
+                removerLivro(id);
             }
         }
 
