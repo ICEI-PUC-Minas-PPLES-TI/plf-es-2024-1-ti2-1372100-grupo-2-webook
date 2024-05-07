@@ -74,7 +74,10 @@
                 alert("Todos os campos devem ser preenchidos.");
                 return;
             }
-
+            if (isNaN(isbn)){
+               alert('ISBN deve conter apenas numeros');
+              return;
+            }
             const novoLivro = {
                 tituloLivro: titulo,
                 autor: autor,
