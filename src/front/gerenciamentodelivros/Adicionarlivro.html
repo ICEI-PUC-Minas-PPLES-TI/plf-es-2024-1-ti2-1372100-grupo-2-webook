@@ -17,13 +17,13 @@
             <a href=" /src/front/gerenciamentodelivros/Iniciargerenciamento.html">
                 <img src=" /docs/images/Logopng.png" alt="Logo" class="logo">
             </a>
-            </div>
+        </div>
     </header>
-    
+
     <main>
         <div class="adicionar-livro-form">
             <h2>Adicionar Livro</h2>
-            <form action=" /src/front/gerenciamentodelivros/Adicionarlivro.html" method="POST">
+            <form>
                 <div class="form-group">
                     <label for="titulo">Título:</label>
                     <input type="text" id="titulo" name="titulo" required>
@@ -33,14 +33,22 @@
                     <input type="text" id="autor" name="autor" required>
                 </div>
                 <div class="form-group">
-                    <label for="ano">Ano de Publicação:</label>
-                    <input type="number" id="ano" name="ano" required>
-                </div>
-                <div class="form-group">
                     <label for="isbn">ISBN:</label>
                     <input type="text" id="isbn" name="isbn" required>
                 </div>
-                <button type="submit">Adicionar Livro</button>
+                <div class="form-group">
+                    <label for="editora">Editora:</label>
+                    <input type="text" id="editora" name="editora" required>
+                </div>
+                <div class="form-group">
+                    <label for="secao">Seção:</label>
+                    <input type="text" id="secao" name="secao" required>
+                </div>
+                <div class="form-group">
+                    <label for="preco">Preço:</label>
+                    <input type="number" id="preco" name="preco" required>
+                </div>
+                <button type="button" onclick="cadastrar()">Adicionar Livro</button>
             </form>
         </div>
     </main>
@@ -96,8 +104,5 @@
             });
     }
 </script>
-
-
-
 
 </html>
