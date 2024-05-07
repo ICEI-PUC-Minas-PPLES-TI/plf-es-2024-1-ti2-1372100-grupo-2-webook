@@ -149,3 +149,13 @@ button[type="button"] {
 button[type="button"]:hover {
     background-color: #122d49;
 }
+
+.central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+
+
