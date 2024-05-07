@@ -4,18 +4,24 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import com.tis2.models.Livro;
 import com.tis2.repositories.LivroRepository;
 
 import jakarta.transaction.Transactional;
 
+import java.util.List;
+
 @Service
 public class LivroServices {
 
     @Autowired
     private LivroRepository livroRepository;
-
+    @GetMapping
+    public List<Livro> findAll(){
+        return livroRepository.findAll();
+    }
     public Livro buscarPeloId(Long Id){
         Optional<Livro> livro = this.livroRepository.findById(Id);
         

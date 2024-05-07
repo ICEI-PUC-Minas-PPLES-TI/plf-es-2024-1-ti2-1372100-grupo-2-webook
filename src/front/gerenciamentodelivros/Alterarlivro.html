@@ -19,7 +19,6 @@
             </a>
         </div>
     </header>
-
     <main class="central">
         <div class="editar-livro-form">
             <h2>Editar Livro</h2>
@@ -108,6 +107,7 @@
             .catch(error => {
                 console.error('Erro ao editar livro:', error);
             });
+        window.location.href = "/webook/src/front/gerenciamentodelivros/Iniciargerenciamento.html";
     }
 
     async function preencherCampos(id) {
@@ -128,12 +128,13 @@
     }
 
     window.onload = function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const id = urlParams.get('id');
-        if (id) {
-            preencherCampos(id);
-        }
-    };
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    if (id) {
+        preencherCampos(id);
+    }
+};
+
 </script>
 
 </html>

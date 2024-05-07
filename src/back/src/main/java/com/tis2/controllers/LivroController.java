@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.List;
+
 
 
 @RestController
@@ -31,7 +33,11 @@ public class LivroController {
     @Autowired
     private LivroServices livroServices;
 
-
+    @GetMapping
+    public ResponseEntity<List<Livro>> findAll(){
+        List<Livro> list = this.livroServices.findAll();
+        return ResponseEntity.ok().body(list);
+    }
     @GetMapping("/{Id}")
     public ResponseEntity<Livro> Id(@PathVariable Long Id){
         Livro obj = this.livroServices.buscarPeloId(Id);
