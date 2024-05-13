@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Livros</title>
+    <link href="/webook/src/front/gerenciamentodeusuarios/RemoverUsuario.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/webook/src/front/gerenciamentodeusuarios/Gerenciamento.html">
+                <img src="/webook/docs/images/Logopng.png" alt="Logo" class="logo">
+            </a>
+            <div class="search-container">
+                <input type="search" placeholder="Buscar Usuário..." class="search-bar" id="searchInput">
+                <button class="search-button" onclick="buscarLivro()">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <table id="usuarios-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Data de Nascimento</th>
+                <th>Maior de idade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <footer>
+        <div class="footer-content">
+            <p>© Webook - Gerenciar Livros. Todos os direitos reservados.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+.header-container {
+    display: flex;
+    width: 100%;
+    background: rgb(192, 211, 230);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.search-container {
+    display: flex;
+    width: 60%;
+    max-width: 600px;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+.search-button {
+    padding: 15px 16px;
+    border: 1px solid #ccc;
+    border-radius: 0 10px 10px 0;
+    background-color: #010e1c;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #122d49;
+}
+
+.adicionar-usuario-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adicionar-usuario-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #010e1c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+}
+
+button[type="button"]:hover {
+    background-color: #122d49;
+}
+
+footer {
+    background: rgb(192, 211, 230);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-links li a {
+    color: #010e1c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links li a:hover {
+    color: rgb(64, 95, 121);
+}

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+header {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    width: 100%;
+    background: rgb(192, 211, 230);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 10px; 
+}
+
+.fotologo {
+    width: 100px;
+    margin-right: auto; 
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px; 
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ancora1, .ancora2, .ancora3 {
+    width: 60%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.botao1, .botao2, .botao3 {
+    width: 100%;
+    padding: 20px;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #fff;
+    color: #010e1c;
+}
+
+button:hover {
+    background-color: rgb(192, 211, 230);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+    }
+
+    .fotologo {
+        margin: 0 auto; 
+    }
+
+    .menu {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .ancora1, .ancora2, .ancora3 {
+        width: 90%; 
+    }
+
+    .botao1, .botao2, .botao3 {
+        font-size: medium; 
+    }
+}
+
+@media (max-width: 480px) {
+    .fotologo {
+        width: 70px; 
+    }
+
+    .botao1, .botao2, .botao3 {
+        padding: 15px; 
+    }
+}
+
+footer {
+    background: rgb(192, 211, 230);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px; 
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-links li a {
+    color: #010e1c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links li a:hover {
+    color: rgb(64, 95, 121);
+}

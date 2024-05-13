@@ -1,0 +1,162 @@
+.header-container {
+    display: flex;
+    width: 100%;
+    background: rgb(192, 211, 230);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 10px;
+}
+
+.search-container {
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+.search-button {
+    padding: 15px 16px;
+    border: 1px solid #ccc;
+    border-radius: 0 10px 10px 0;
+    background-color: #010e1c;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #122d49;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .search-bar,
+    .search-button {
+        padding: 8px 10px;
+    }
+}
+
+footer {
+    background: rgb(192, 211, 230);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-links li a {
+    color: #010e1c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links li a:hover {
+    color: rgb(64, 95, 121);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.editar-usuario-form {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #010e1c;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #122d49;
+}
+
+.central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Livro</title>
+    <link href="/webook/src/front/gerenciamentodeusuarios/AdicionarUsuario.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/webook/src/front/gerenciamentodeusuarios/Gerenciamento.html">
+                <img src="/webook/docs/images/Logopng.png" alt="Logo" class="logo">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="adicionar-usuario-form">
+            <h2>Adicionar Usuário</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="autor">CPF:</label>
+                    <input type="number" id="cpf" name="cpf" required>
+                </div>
+                <div class="form-group">
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <button type="button" onclick="cadastrar()">Adicionar Usuário</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>© Webook - Gerenciar Livros. Todos os direitos reservados.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
