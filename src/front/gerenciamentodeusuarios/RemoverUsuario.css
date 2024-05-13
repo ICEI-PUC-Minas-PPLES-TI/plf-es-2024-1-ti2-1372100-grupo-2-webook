@@ -49,7 +49,7 @@
 }
 
 .search-button:hover {
-    background-color: #122d49;
+    background-color:rgb(64, 95, 121);
 }
 
 @media (max-width: 768px) {
