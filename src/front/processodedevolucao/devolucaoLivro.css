@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: Inter;
 }
 
 .header-container {
@@ -10,18 +10,46 @@
     width: 100%;
     background: rgb(192, 211, 230);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-items: center;
+    align-items: center; 
     justify-content: center;
     padding: 20px;
 }
 
 .logo {
-    width: 100px;
-    flex-shrink: 0;
-    position: absolute;
+    width: 100px;  
+    flex-shrink: 0; 
+    position: absolute; 
     left: 10px;
     top: 45px;
     transform: translateY(-50%);
+}
+
+.search-container {
+    display: flex;
+    width: 80%;
+    max-width: 600px; 
+    align-items: center;
+}
+
+.search-bar {
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 100%; 
+    border-radius: 10px 0 0 10px;
+    border-right: none; 
+}
+
+.search-button {
+    padding: 15px 16px;
+    border: 1px solid #ccc;
+    border-radius: 0 10px 10px 0;
+    background-color: #010e1c;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: rgb(64, 95, 121);
 }
 
 @media (max-width: 768px) {
@@ -29,27 +57,28 @@
         flex-direction: column;
         padding: 10px 0;
     }
-
     .logo {
         position: relative;
         left: 0;
         margin-bottom: 10px;
     }
+    .search-container {
+        width: 90%; 
+    }
 }
 
 @media (max-width: 480px) {
-
-    .search-bar,
-    .search-button {
-        padding: 8px 10px;
+    .search-bar, .search-button {
+        padding: 8px 10px; 
     }
 }
 
 footer {
     background: rgb(192, 211, 230);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px 10px;
+    padding: 20px 10px; 
     width: 100%;
+    position: fixed;
     bottom: 0;
 }
 
@@ -81,7 +110,7 @@ footer {
     font-weight: bold;
 }
 
-social-links li a:hover {
+.social-links li a:hover {
     color: rgb(64, 95, 121);
 }
 
@@ -89,11 +118,9 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    margin-bottom: 60px;
 }
 
-th,
-td {
+th, td {
     padding: 12px;
     border: 1px solid #ccc;
     text-align: left;
@@ -103,21 +130,8 @@ th {
     background-color: #f2f2f2;
 }
 
-button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #010e1c;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: rgb(64, 95, 121);
-}
-
 .edit-button {
-    background-color: #4CAF50;
+    background-color: #4CAF50; 
     color: white;
     border: 0px;
     padding: 5px;
@@ -128,7 +142,7 @@ button:hover {
 }
 
 .delete-button {
-    background-color: #f44336;
+    background-color: #f44336; 
     color: white;
     border: 0px;
     padding: 5px;
