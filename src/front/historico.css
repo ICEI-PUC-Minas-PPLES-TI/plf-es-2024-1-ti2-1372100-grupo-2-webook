@@ -32,26 +32,26 @@ body {
 
 .search-container {
     display: flex;
-    justify-content: center;
+    width: 80%;
+    max-width: 600px; 
     align-items: center;
-    width: 100%;
 }
 
 .search-bar {
-    width: 300px;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; 
+    border-radius: 10px 0 0 10px;
+    border-right: none; 
 }
 
 .search-button {
-    padding: 10px 15px;
-    margin-left: 10px;
-    border: none;
+    padding: 15px 16px;
+    border: 1px solid #ccc;
+    border-radius: 0 10px 10px 0;
     background-color: #010e1c;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 .search-button:hover {

@@ -26,7 +26,8 @@ header {
     justify-content: space-around;
     width: 100%;
     margin:  auto;
-    padding: 20px;
+    padding: 30px;
+    margin-bottom: 100px;
 }
 
 #main {
@@ -52,7 +53,7 @@ header {
     font-weight: bold;
     font-size: large;
     margin-top: 15px;
-    border-radius: 10px;
+    border-radius: 50px;
     border: 2px solid #ccc;
     cursor: pointer;
     background-color: #fff;
@@ -61,7 +62,7 @@ header {
 
 button:hover {
     background-color: rgb(192, 211, 230);
-    border: 1px solid #010e1c;
+    border: 1px solid rgb(192, 211, 230);
     transform: scale(1.05);
     transition: 0.3s;
 }

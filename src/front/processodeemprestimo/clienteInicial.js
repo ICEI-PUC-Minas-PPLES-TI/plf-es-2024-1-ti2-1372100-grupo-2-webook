@@ -21,7 +21,7 @@ async function fetchLivros() {
                             <td>${livro.secao}</td>
                             <td>${livro.preco}$</td>
                             <td>
-                                <button onclick="emprestarLivro(${livro.id})">Emprestar</button>
+                                <button class="edit-button" onclick="emprestarLivro(${livro.id})">Emprestar</button>
                             </td>
                         `;
                 tbody.appendChild(newRow);
@@ -58,7 +58,7 @@ async function buscarLivro() {
                         <td>${livro.secao}</td>
                         <td>${livro.preco}$</td>
                         <td>
-                            <button onclick="emprestarLivro(${livro.id})">Emprestar</button>
+                            <button class="edit-button" onclick="emprestarLivro(${livro.id})">Emprestar</button>
                         </td>
                     `;
             tbody.appendChild(newRow);

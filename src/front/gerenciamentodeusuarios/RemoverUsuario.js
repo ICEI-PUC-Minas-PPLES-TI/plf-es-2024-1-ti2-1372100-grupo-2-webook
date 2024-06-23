@@ -17,8 +17,8 @@ async function fetchUsuarios() {
                         <td>${usuario.cpf}</td>
                         <td>${usuario.dataNascimento}</td>
                         <td>
-                            <button onclick="editarUsuario(${usuario.id})">Editar</button>
-                            <button onclick="confirmarRemoverUsuario(${usuario.id})">Remover</button>
+                            <button class="edit-button" onclick="editarUsuario(${usuario.id})">Editar</button>
+                            <button class="delete-button" onclick="confirmarRemoverUsuario(${usuario.id})">Remover</button>
                         </td>
                     `;
             tbody.appendChild(newRow);
@@ -50,8 +50,8 @@ async function buscarUsuario() {
                     <td>${usuario.cpf}</td>
                     <td>${usuario.dataNascimento}</td>
                     <td>
-                        <button onclick="editarUsuario(${usuario.id})">Editar</button>
-                        <button onclick="confirmarRemoverUsuario(${usuario.id})">Remover</button>
+                        <button class="edit-button" onclick="editarUsuario(${usuario.id})">Editar</button>
+                        <button class="delete-button" onclick="confirmarRemoverUsuario(${usuario.id})">Remover</button>
                     </td>
                 `;
         tbody.appendChild(newRow);

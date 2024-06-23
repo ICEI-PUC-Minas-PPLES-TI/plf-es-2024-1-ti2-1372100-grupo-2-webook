@@ -10,15 +10,15 @@
     width: 100%;
     background: rgb(192, 211, 230);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
 .logo {
-    width: 100px;  
-    flex-shrink: 0; 
-    position: absolute; 
+    width: 100px;
+    flex-shrink: 0;
+    position: absolute;
     left: 10px;
     top: 45px;
     transform: translateY(-50%);
@@ -29,6 +29,7 @@
         flex-direction: column;
         padding: 10px 0;
     }
+
     .logo {
         position: relative;
         left: 0;
@@ -37,15 +38,17 @@
 }
 
 @media (max-width: 480px) {
-    .search-bar, .search-button {
-        padding: 8px 10px; 
+
+    .search-bar,
+    .search-button {
+        padding: 8px 10px;
     }
 }
 
 footer {
     background: rgb(192, 211, 230);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px 10px; 
+    padding: 20px 10px;
     width: 100%;
     bottom: 0;
 }
@@ -89,7 +92,8 @@ table {
     margin-bottom: 60px;
 }
 
-th, td {
+th,
+td {
     padding: 12px;
     border: 1px solid #ccc;
     text-align: left;
@@ -110,4 +114,26 @@ button {
 
 button:hover {
     background-color: rgb(64, 95, 121);
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: 0px;
+    padding: 5px;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: 0px;
+    padding: 5px;
+}
+
+.delete-button:hover {
+    background-color: #da190b;
 }
