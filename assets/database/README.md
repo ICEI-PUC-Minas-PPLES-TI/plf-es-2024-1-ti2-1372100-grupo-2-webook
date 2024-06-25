@@ -8,10 +8,9 @@ Os principais documentos a serem produzidos são:
 * [`modeloRelacional.png`]()
 	* Apresentar o modelo relacional em arquivo editável no formato compatível com a ferramenta utilizada pela equipe.
 
-* [`database_creation_script.sql`]()
+* [`webook_usuario.sql`]()
+* [`webook_livro.sql`]()
+* [`webook_emprestimo_livro.sql`]()
+* [`webook_emprestimo.sql`]()
 	* Script de criação do banco de dados.
 
-* [`database_data_initialization_script.sql`]()
-	* Script de inicialização (povoamento) do banco de dados.
-
-Demais artefatos que julgar pertinentes.
