@@ -1,3 +1,4 @@
+---
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: WeBook Bibliotecas
@@ -5,27 +6,25 @@ authors:
   - family-names: Palhares Reale Pereira
     given-names: Eduardo
   - family-names: Guimarães Ribeiro
-    given-names:  Jõao Pedro
+    given-names: Jõao Pedro
   - family-names: Almeida Araujo
-    given-names:  Pedro Henrique
+    given-names: Pedro Henrique
   - family-names: Curi Kramberger
     given-names: Arthur
   - family-names: Macedo de Carvalho
     given-names: Hugo
   - family-names: Pimenta Vaz
     given-names: Pedro Henrique
-
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Alonso Veloso
-    given-names: Eveline 
+    given-names: Eveline
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Baroni De Carvalho
-    given-names: Juliana Amaral 
-
+    given-names: Juliana Amaral
     keywords:
-    - webook
+      - webook
 repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/webook.git
 license: CC-BY-4.0
 version: 1.0.0
