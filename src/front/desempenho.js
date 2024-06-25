@@ -60,7 +60,7 @@ function displayChartPIE(proporcao) {
     const chart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ['Itens no Acervo', 'Itens Emprestados'],
+            labels: ['Itens no Acervo ', 'Itens Indisponiveis'],
             datasets: [{
                 data: [proporcao, 100 - proporcao],
                 backgroundColor: [
