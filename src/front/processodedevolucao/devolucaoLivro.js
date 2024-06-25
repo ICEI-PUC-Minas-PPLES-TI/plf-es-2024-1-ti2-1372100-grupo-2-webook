@@ -18,10 +18,10 @@ async function fetchLivrosDevolucao() {
                             <td>${emprestimo.dataEmprestimo.join('/')}</td>
                             <td>Não devolvido</td>
                             <td>
-                                <button onclick="devolverLivro(${emprestimo.id})">Devolver</button>
+                                <button class="edit-button" onclick="devolverLivro(${emprestimo.id})">Devolver</button>
                             </td>
                             <td>
-                                ${emprestimo.danificado ? 'Livro devolvido com defeito' : `<button onclick="reportarLivroDanificado(${emprestimo.id}, ${emprestimo.idLivro})">Reportar Livro Danificado</button>`}
+                                ${emprestimo.danificado ? 'Livro devolvido com defeito' : `<button class="delete-button" onclick="reportarLivroDanificado(${emprestimo.id}, ${emprestimo.idLivro})">Reportar Livro Danificado</button>`}
                             </td>
                         `;
                 tbody.appendChild(newRow);

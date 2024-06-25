@@ -1,17 +1,19 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: WeBook Bibliotecas
 authors:
-  - family-names: sobrenome do aluno 1
-    given-names: Nome do aluno 1 
-  - family-names: sobrenome do aluno 2
-    given-names: Nome do aluno 2 
-  - family-names: sobrenome do aluno 3
-    given-names: Nome do aluno 3 
-  - family-names: sobrenome do aluno 4
-    given-names: Nome do aluno 4 
-  - family-names: sobrenome do aluno 5
-    given-names: Nome do aluno 5 
+  - family-names: Palhares Reale Pereira
+    given-names: Eduardo
+  - family-names: Guimarães Ribeiro
+    given-names:  Jõao Pedro
+  - family-names: Almeida Araujo
+    given-names:  Pedro Henrique
+  - family-names: Curi Kramberger
+    given-names: Arthur
+  - family-names: Macedo de Carvalho
+    given-names: Hugo
+  - family-names: Pimenta Vaz
+    given-names: Pedro Henrique
 
   - name-suffix: Professor
     affiliation: PUC Minas
@@ -21,13 +23,10 @@ authors:
     affiliation: PUC Minas
     family-names: Baroni De Carvalho
     given-names: Juliana Amaral 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: De Brito
-    given-names: Aline Norberta
+
     keywords:
-    - 
-repository-code: 
+    - webook
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/webook.git
 license: CC-BY-4.0
 version: 1.0.0
-date-released:
+date-released: 18/06/2024

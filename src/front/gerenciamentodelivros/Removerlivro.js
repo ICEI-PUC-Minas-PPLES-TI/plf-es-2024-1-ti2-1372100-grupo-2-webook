@@ -20,8 +20,8 @@ const apiUrl = 'http://localhost:8080/livro';
                         <td>${livro.secao}</td>
                         <td>${livro.preco}$</td>
                         <td>
-                            <button onclick="editarLivro(${livro.id})">Editar</button>
-                            <button onclick="confirmarRemoverLivro(${livro.id})">Remover</button>
+                            <button class="edit-button" onclick="editarLivro(${livro.id})">Editar</button>
+                            <button class="delete-button" onclick="confirmarRemoverLivro(${livro.id})">Remover</button>
                         </td>
                     `;
                     tbody.appendChild(newRow);
@@ -56,8 +56,8 @@ const apiUrl = 'http://localhost:8080/livro';
                     <td>${livro.secao}</td>
                     <td>${livro.preco}$</td>
                     <td>
-                        <button onclick="editarLivro(${livro.id})">Editar</button>
-                        <button onclick="confirmarRemoverLivro(${livro.id})">Remover</button>
+                        <button class="edit-button" onclick="editarLivro(${livro.id})">Editar</button>
+                        <button class="delete-button" onclick="confirmarRemoverLivro(${livro.id})">Remover</button>
                     </td>
                 `;
                 tbody.appendChild(newRow);
