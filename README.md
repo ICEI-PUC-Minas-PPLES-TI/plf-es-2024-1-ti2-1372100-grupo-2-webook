@@ -18,14 +18,50 @@ No caso específico desse projeto, o objetivo deste trabalho  é desenvolver um 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+**Tela Inicial**:
+Apresenta 6 botões principais para navegar pelos processos do projeto e visualizar o histórico de livros emprestados e indicadores de desempenho.
 
+**Tela de Empréstimo**:
+Checagem das informações do livro selecionado e formulário para preenchimento dos dados do usuário, prazo de devolução e data de retirada.
+
+**Tela de Devolução**:
+Listagem de todos os livros emprestados, permitindo a devolução normal ou registro de danificação.
+
+**Gerenciamento dos Livros**:
+Cadastro, edição e remoção de livros com todos os detalhes necessários (título, autor, ISBN, etc.).
+
+**Gerenciamento de Usuários**:
+Cadastro, edição e remoção de usuários com informações completas (nome, CPF, data de nascimento).
+
+**Histórico de Livros Emprestados**:
+Visualização dos empréstimos anteriores, incluindo datas de retirada e devolução, condição dos livros e preços pagos.
+
+**Indicadores de Desempenho**:
+Gráficos mostrando o percentual de devoluções atrasadas, livros danificados e taxa de livros indisponíveis.
 ## Histórico de versões
 
 * 0.1.1
-    * CHANGE: Atualização das documentações. Código permaneceu inalterado.
+   * CHANGE: Atualização das documentações. Código permaneceu inalterado.
+  
 * 0.1.0
-    * Implementação da funcionalidade X pertencente ao processo P.
-* 0.0.1
-    * Trabalhando na modelagem do processo de negócio.
+   * IDEA: Desenvolvimento da ideia do projeto.
+
+* 0.2.0
+   * DESIGN: Modelagem dos processos.
+     
+* 0.3.0
+  
+   * PLAN: Projeto da solução.
+* 0.4.0
+  
+   * NEW: Implementação do primeiro processo.
+* 0.5.0
+  
+   * NEW: Implementação do segundo processo.
+* 0.6.0
+  
+   * NEW: Implementação do terceiro e quarto processo.
+* 1.0.0
+  
+   * FINAL: Implementação do indicador de desempenho e finalização do projeto.
 
