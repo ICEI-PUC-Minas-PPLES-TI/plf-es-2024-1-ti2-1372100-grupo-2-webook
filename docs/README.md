@@ -176,7 +176,7 @@ Acesso em: 05 mar. 2024.
 ## Apêndice B - Apresentação final
 
 
-[Slides da apresentação final](https://www.canva.com/design/DAGJD6jewuM/fI3i64ji6O-TUhepKSjLHw/edit?utm_content=DAGJD6jewuM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Slides da apresentação final](https://www.canva.com/design/DAGJD6jewuM/tSHdGHiK5qIgqeQTo8ziqA/view?utm_content=DAGJD6jewuM&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 
 [Vídeo da apresentação final](video/)
